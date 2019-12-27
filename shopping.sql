@@ -43,4 +43,4 @@ product_stock number not null
 insert into stock(order_id, book_id, product_stock)
 values(2000,1001,12);
 select * from stock;
-select 
+

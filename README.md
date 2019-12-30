@@ -10,7 +10,7 @@
 
 create table pharmacy(
 product_id number ,
-product_name varchar(20) not null,
+product_name varchar2(20) not null,
 medicine_id number not null,
 cost_ number not null,
 dose number not null,

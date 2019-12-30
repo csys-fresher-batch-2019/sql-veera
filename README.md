@@ -27,11 +27,9 @@ values(1003,'Herceptin',504,280,14);
 insert into pharmacy(product_id,product_name,medicine_id,cost_,dose)
 values(1004,'Keytruda',505,350,20);
  
- 
  select * from pharmacy;
-
-
 ```
+
 ### Feature 2:Stock Details
 ```sql
 

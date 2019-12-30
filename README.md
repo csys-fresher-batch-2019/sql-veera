@@ -4,6 +4,10 @@
 *user should be able to view all pharmacy products
 ### Feature 1:List of all pharmacy products
 
+#### query:
+
+```
+
 create table pharmacy(
 product_id number ,
 product_name varchar(20) not null,
@@ -23,5 +27,8 @@ values(1003,'Herceptin',504,280,14);
 insert into pharmacy(product_id,product_name,medicine_id,cost_,dose)
 values(1004,'Keytruda',505,350,20);
  
- Query:
+ 
  select * from pharmacy;
+
+
+```

@@ -1,7 +1,7 @@
 # Pharmacy store Management
 *http://pharmacystore.in
 ## Features
-*user should be able to view all pharmacy products
+*user can able to view all pharmacy products
 ### Feature 1:List of all pharmacy products
 
 #### query:
@@ -32,3 +32,21 @@ values(1004,'Keytruda',505,350,20);
 
 
 ```
+### Feature 2:Stock Details
+
+---
+create table stock(
+stock_id number,
+stock_name varchar2(50),
+stock_number number not null,
+stock_type varchar2(50),
+stock_description varchar2(50),
+constraint stock_id_pk primary key(stock_id));
+insert into  stock(stock_id, stock_name,stock_number,stock_type,stock_description )
+values(  9001,'local',2095,'packed','available');
+insert into  stock(stock_id, stock_name,stock_number,stock_type,stock_description )
+values(  9002,'Export',2096,'packed','Not available');
+insert into  stock(stock_id, stock_name,stock_number,stock_type,stock_description )
+values(  9003,'local',2097,'packed','available');
+select * from stock;
+----

@@ -33,7 +33,7 @@ values(1004,'Keytruda',505,350,20);
 
 ```
 ### Feature 2:Stock Details
-'''sql
+```sql
 
 create table stock(
 stock_id number,
@@ -49,4 +49,4 @@ values(  9002,'Export',2096,'packed','Not available');
 insert into  stock(stock_id, stock_name,stock_number,stock_type,stock_description )
 values(  9003,'local',2097,'packed','available');
 select * from stock;
-'''
+```

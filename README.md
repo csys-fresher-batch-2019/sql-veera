@@ -1,7 +1,7 @@
 # Pharmacy store Management
-*http://pharmacystorepp.in
+*http://pharmacystore.in
 ## Features
-*user should be able to view all pharmacy products
+*User should be able to view all pharmacy products
 ### Feature 1:List of all pharmacy products
 
 create table pharmacy(

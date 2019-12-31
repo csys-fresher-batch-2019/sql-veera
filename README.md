@@ -115,7 +115,8 @@ inventory_id number,
 inventory_items varchar2(30) not null,
 inventory_number number not null,
 inventory_type varchar2(30) not null,
-inventory_description varchar2(30) not null
+inventory_description varchar2(30) not null,
+constraint inventory_id_pk primary key (inventory_id);
 )
 
 insert into inventory(inventory_id  ,inventory_items ,inventory_number,inventory_type,inventory_description)

@@ -43,32 +43,31 @@ select * from product;
 ```
 
 ### Feature 2:Stock Details
-| SI.NO | STOCK_ID | STOCK_NAME | STOCK_NUMBER | STOCK_TYPE | STOCK_DESCRIPTION |
+| SI.NO | STOCK_ID | STOCK_NAME | STOCK_NUMBER | STOCK_TYPE | STOCK_STATUS      |
 |-------|----------|------------|--------------|------------|-------------------|
 | 1     | 9001     | LOCAL      | 2095         | PACKED     | AVAILABLE         |
 | 2     | 9002     | EXPORT     | 2096         | PACKED     | NOT AVAILABLE     |
 | 3     | 9003     | LOCAL      | 2097         | PACKED     | AVAILABLE         |
 
 ```sql
+create table stock1(
+stock1_id number,
+stock1_name varchar2(50),
+stock1_number number not null,
+stock1_type varchar2(50),
+stock1_status varchar2(50),
+constraint stock1_id_pk primary key(stock1_id));
 
-create table stock(
-stock_id number,
-stock_name varchar2(50),
-stock_number number not null,
-stock_type varchar2(50),
-stock_description varchar2(50),
-constraint stock_id_pk primary key(stock_id));
-
-insert into  stock(stock_id, stock_name,stock_number,stock_type,stock_description )
+insert into  stock1(stock1_id, stock1_name,stock1_number,stock1_type,stock1_status )
 values(  9001,'local',2095,'packed','available');
-insert into  stock(stock_id, stock_name,stock_number,stock_type,stock_description )
+insert into  stock1(stock1_id, stock1_name,stock1_number,stock1_type,stock1_status )
 values(  9002,'Export',2096,'packed','Not available');
-insert into  stock(stock_id, stock_name,stock_number,stock_type,stock_description )
+insert into  stock1(stock1_id, stock1_name,stock1_number,stock1_type,stock1_status)
 values(  9003,'local',2097,'packed','available');
 
-select * from stock;
+select * from stock1;
 
-``` 
+```
 ### Feature 3:Company details
 
 | SI.NO | COMPANY_ID | COMPANY_NAME | COMPANY_TYPE              | COMPANY_ADDRESS            |

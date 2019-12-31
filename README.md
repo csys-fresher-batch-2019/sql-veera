@@ -65,3 +65,11 @@ values(  9003,'local',2097,'packed','available');
 
 select * from stock;
 ```
+### Feature 3:Company details
+
+| SI.NO | COMPANY_ID | COMPANY_NAME | COMPANY_TYPE              | COMPANY_ADDRESS            |
+|-------|------------|--------------|---------------------------|----------------------------|
+| 1     | 3001       | BAYER AG     | Medications for addiction | t1,3rd street, Erode       |
+| 2     | 3002       | ABBVIE       | Benzodiazepines           | T2,2nd street, trichy      |
+| 3     | 3004       | SANOFIE      | Medications for dementia  | D3,1st street, chennai     |
+| 4     | 3005       | MERCK&CO     | Stimulant mediction       | B6,4th street,  coimbatore |

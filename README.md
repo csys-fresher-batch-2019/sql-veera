@@ -4,6 +4,13 @@
 *user can able to view all pharmacy products
 ### Feature 1:List of all pharmacy products
 
+| SI.NO | PRODUCT_ID | PRODUCT_NAME | MEDICINE_ID | COST | DOSE |
+|-------|------------|--------------|-------------|------|------|
+| 1     | 1000       | HUMIRA       | 501         | 250  | 10   |
+| 2     | 1001       | ELIQUIS      | 502         | 200  | 6    |
+| 3     | 1002       | AVASTIN      | 503         | 300  | 8    |
+| 4     | 1003       | HERCEPTIN    | 504         | 280  | 14   |
+| 5     | 1004       | KEYTRUDA     | 505         | 350  | 20   |
 #### query:
 
 ```
@@ -34,6 +41,11 @@ select * from product;
 ```
 
 ### Feature 2:Stock Details
+| SI.NO | STOCK_ID | STOCK_NAME | STOCK_NUMBER | STOCK_TYPE | STOCK_DESCRIPTION |
+|-------|----------|------------|--------------|------------|-------------------|
+| 1     | 9001     | LOCAL      | 2095         | PACKED     | AVAILABLE         |
+| 2     | 9002     | EXPORT     | 2096         | PACKED     | NOT AVAILABLE     |
+| 3     | 9003     | LOCAL      | 2097         | PACKED     | AVAILABLE         |
 ```sql
 
 create table stock(

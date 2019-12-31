@@ -53,5 +53,5 @@ values(  9003,'local',2097,'packed','available');
 
 select * from stock;
 
-```
+``` 
 ### Feature 3:Company details

@@ -128,3 +128,28 @@ values(3003,'Medications for dementia',618,'Packed','Not Available');
 select * from inventory;
 
 ```
+### Feature 5: Sell Details
+
+| SI.NO | SELL_ID | SELL_NAME | SELL_TYPE | SELL_DESCRIPTION    |
+|-------|---------|-----------|-----------|---------------------|
+| 1     | 7000    | ARAVIND   | HALF      | SELF                |
+| 2     | 7001    | HARI      | FULL      | DOCTER PRESCRIPTION |
+| 3     | 7002    | RAVI      | FULL      | DOCTER PRESCRIPTION |
+
+```sql
+create table sell(
+sell_id number ,
+sell_name varchar2(30) not null,
+sell_type varchar2(30) not  null,
+sell_description varchar2(30) not null
+);
+
+insert into sell(sell_id,sell_name, sell_type, sell_description)
+values(7000,'Aravind','Half','Self');
+insert into sell(sell_id,sell_name, sell_type, sell_description)
+values(7001,'Hari','Full','Docter Prescription');
+insert into sell(sell_id,sell_name, sell_type, sell_description)
+values(7002,'Ravi','Half','Docter Prescription');
+
+select * from sell;
+```

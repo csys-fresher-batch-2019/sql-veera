@@ -78,7 +78,7 @@ select * from product;
 |-------|----------|------------|------------ | -------------|------------|-------------------|
 | 1     | 9001     | 1000       |  LOCAL      | 2095         | PACKED     | AVAILABLE         |
 | 2     | 9002     | 1001       |  EXPORT     | 2096         | OPEN       | NOT AVAILABLE     |
-| 3     | 9003     | 1002       |  PACKED     | AVAILABLE    | Packed     | AVAILABLE         |
+| 3     | 9003     | 1002       | LOCAL       | 2097         | Packed     | AVAILABLE         |
 
 ```sql
 create table stock1(

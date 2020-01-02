@@ -36,11 +36,11 @@ select * from company;
 ```
 ### Feature 2:List of all pharmacy products
 
-| SI.NO | PRODUCT_ID | PRODUCT_NAME | COST | DOSE |
-|-------|------------|--------------|------|------|
-| 1     | 1000       | HUMIRA       | 250  | 10   |
-| 2     | 1001       | ELIQUIS      | 200  | 6    |
-| 3     | 1002       | AVASTIN      | 300  | 8    |
+| SI.NO | PRODUCT_ID |COMPANY_ID |  PRODUCT_NAME| COST | DOSE |
+|-------|------------|---------- |--------------|------|------|
+| 1     | 1000       | 3001      |  HUMIRA      | 250  | 10   |
+| 2     | 1001       | 3002      | ELIQUIS      | 200  | 6    |
+| 3     | 1002       | 3003      | AVASTIN      | 300  | 8    |
 
 
 
@@ -51,48 +51,52 @@ select * from company;
 
 create table product(
 product_id number ,
+company_id number not null,
 product_name varchar(20) not null,
-medicine_id number not null,
 cost number not null,
 dose number not null,
 constraint product_id_pk primary key(product_id),
-constraint product_name_uq unique(product_name),
-constraint medicine_id_uq unique(medicine_id)
+constraint company_id_fk foreign  key (company_id) references company(company_id),
+constraint product_name_uq unique(product_name)
 );
 
-insert into product(product_id,product_name,medicine_id,cost,dose)
-values(1000,'Humira',501,250,10);
-insert into product(product_id,product_name,medicine_id,cost,dose)
-values(1001,'Eliquis',502,200,6);
-insert into product(product_id,product_name,medicine_id,cost,dose)
-values(1002,'Avastin',503,300,8);
+insert into product(product_id,company_id,product_name,cost,dose)
+values(1000,3001,'Humira',250,10);
+insert into product(product_id,company_id,product_name,cost,dose)
+values(1001,3002,'Eliquis',200,6);
+insert into product(product_id,company_id,product_name,cost,dose)
+values(1002,3003,'Avastin',300,8);
+
 
 select * from product;
+
 ```
 
-### Feature 3:Stock Details
+### Feature 3:Stock1 Details
 
-| SI.NO | STOCK_ID | STOCK_NAME | STOCK_NUMBER | STOCK_TYPE | STOCK_STATUS      |
-|-------|----------|------------|--------------|------------|-------------------|
-| 1     | 9001     | LOCAL      | 2095         | PACKED     | AVAILABLE         |
-| 2     | 9002     | EXPORT     | 2096         | PACKED     | NOT AVAILABLE     |
-| 3     | 9003     | LOCAL      | 2097         | PACKED     | AVAILABLE         |
+| SI.NO | STOCK1_ID| PRODUCT_ID | STOCK1_NAME | STOCK1_NUMBER| STOCK1_TYPE| STOCK1_STATUS     |
+|-------|----------|------------|------------ | -------------|------------|-------------------|
+| 1     | 9001     | 1000       |  LOCAL      | 2095         | PACKED     | AVAILABLE         |
+| 2     | 9002     | 1001       |  EXPORT     | 2096         | OPEN       | NOT AVAILABLE     |
+| 3     | 9003     | 1002       |  PACKED     | AVAILABLE    | Packed     | AVAILABLE         |
 
 ```sql
 create table stock1(
 stock1_id number,
+product_id number not null,
 stock1_name varchar2(50),
 stock1_number number not null,
 stock1_type varchar2(50),
 stock1_status varchar2(50),
-constraint stock1_id_pk primary key(stock1_id));
+constraint stock1_id_pk primary key(stock1_id),
+constraint product_id_fk foreign key(product_id) references product(product_id));
 
-insert into  stock1(stock1_id, stock1_name,stock1_number,stock1_type,stock1_status )
-values(  9001,'local',2095,'packed','available');
-insert into  stock1(stock1_id, stock1_name,stock1_number,stock1_type,stock1_status )
-values(  9002,'Export',2096,'packed','Not available');
-insert into  stock1(stock1_id, stock1_name,stock1_number,stock1_type,stock1_status)
-values(  9003,'local',2097,'packed','available');
+insert into  stock1(stock1_id,product_id, stock1_name,stock1_number,stock1_type,stock1_status )
+values(  9001,1000,'local',2095,'packed','available');
+insert into  stock1(stock1_id,product_id, stock1_name,stock1_number,stock1_type,stock1_status )
+values(  9002,1001,'Export',2096,'open','Not available');
+insert into  stock1(stock1_id,product_id, stock1_name,stock1_number,stock1_type,stock1_status)
+values(  9003,1002,'local',2097,'packed','available');
 
 select * from stock1;
 

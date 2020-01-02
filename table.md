@@ -45,4 +45,13 @@
 | 1     | 3001         | 7000      | Benzodiazepines          | 601              | Packed         | Available             |
 | 2     | 3002         | 7002      | Stimulant mediction      | 613              | Not packed     | Available             |
 | 3     | 3003         | 7002      | Medications for dementia | 618              | Packed         | Not Available         |
+### Feature 6 : Display the certain product details
+
+### Feature 7 :Update of stock  status
+
+| SI.NO | STOCK1_ID | PRODUCT_ID | STOCK1_NAME | STOCK1_NUMBER | STOCK1_TYPE | STOCK_STATUS |
+|-------|-----------|------------|-------------|---------------|-------------|--------------|
+| 1     | 9001      | 1000       | LOCAL       | 2095          | packed      | available    |
+| 2     | 9002      | 1001       | EXPORT      | 2096          | open        | available    |
+| 3     | 9003      | 1002       | LOCAL       | 2097          | packed      | available    |
  

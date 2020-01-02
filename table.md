@@ -40,9 +40,9 @@
 
 ### Feature 5:Inventory Details
 
-| SI.NO | INVENTORY_ID | INVENTORY_ITEMS          | INVENTORY_NUMBER | INVENTORY_TYPE | INVENTORY_STATUS      |
-|-------|--------------|--------------------------|------------------|----------------|-----------------------|
-| 1     | 3001         | Benzodiazepines          | 601              | Packed         | Available             |
-| 2     | 3002         | Stimulant mediction      | 613              | Not packed     | Available             |
-| 3     | 3003         | Medications for dementia | 618              | Packed         | Not Available         |
+| SI.NO | INVENTORY_ID | SELL_ID   | INVENTORY_ITEMS          | INVENTORY_NUMBER | INVENTORY_TYPE | INVENTORY_STATUS      |
+|-------|--------------|-----------|--------------------------|------------------|----------------|-----------------------|
+| 1     | 3001         | 7000      | Benzodiazepines          | 601              | Packed         | Available             |
+| 2     | 3002         | 7002      | Stimulant mediction      | 613              | Not packed     | Available             |
+| 3     | 3003         | 7002      | Medications for dementia | 618              | Packed         | Not Available         |
  

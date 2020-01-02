@@ -161,6 +161,7 @@ select c.company_id,c.company_name,p.product_id,p.product_name,s.stock1_type,s.s
 from company c,product p,stock1 s
 where c.company_id=p.company_id and p.product_id=s.product_id;
 
+```
 ```sql query to update as available
 update stock1 
 set stock1_status='available'

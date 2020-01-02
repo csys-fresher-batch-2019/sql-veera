@@ -9,7 +9,7 @@
 | 1     | 3001       | BAYER AG     | Medications for addiction | T1,3rd street, Erode       |
 | 2     | 3002       | ABBVIE       | Benzodiazepines           | T2,2nd street, Trichy      |
 | 3     | 3004       | SANOFIE      | Medications for dementia  | D3,1st street, Chennai     |
-| 4     | 3005       | MERCK        | Stimulant mediction       | B6,4th street,  Coimbatore |
+
 
 
 ```sql
@@ -29,8 +29,7 @@ insert into company(company_id,company_name,company_type,company_address)
 values(3002,'ABBVIE','Benzodiazepines','T2,2nd Street,trichy');
 insert into company(company_id,company_name,company_type,company_address)
 values(3003,'SANOFIE','Medictions for dementia','D3,1st Street,chennai');
-insert into company(company_id,company_name,company_type,company_address)
-values(3004,'MERCK','Stimulant Mediction','B6,4th Street,coimbatore');
+
 select * from company;
 
 
@@ -42,8 +41,7 @@ select * from company;
 | 1     | 1000       | HUMIRA       | 250  | 10   |
 | 2     | 1001       | ELIQUIS      | 200  | 6    |
 | 3     | 1002       | AVASTIN      | 300  | 8    |
-| 4     | 1003       | HERCEPTIN    | 280  | 14   |
-| 5     | 1004       | KEYTRUDA     | 350  | 20   |
+
 
 
 
@@ -68,10 +66,6 @@ insert into product(product_id,product_name,medicine_id,cost,dose)
 values(1001,'Eliquis',502,200,6);
 insert into product(product_id,product_name,medicine_id,cost,dose)
 values(1002,'Avastin',503,300,8);
-insert into product(product_id,product_name,medicine_id,cost,dose)
-values(1003,'Herceptin',504,280,14);
-insert into product(product_id,product_name,medicine_id,cost,dose)
-values(1004,'Keytruda',505,350,20);
 
 select * from product;
 ```

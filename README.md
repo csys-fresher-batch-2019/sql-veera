@@ -166,5 +166,5 @@ where c.company_id=p.company_id and p.product_id=s.product_id;
 update stock1 
 set stock1_status='available'
 where product_id=1001;
-  
+   
   ```

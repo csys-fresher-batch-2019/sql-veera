@@ -19,18 +19,20 @@ create table company
 company_id number,
 company_name varchar2(30) not null,
 company_type varchar2(30) not null,
-company_address varchar2(30) not null
+company_address varchar2(30) not null,
+constraint company_id_pk primary key(company_id),
+constraint company_id_uq unique key(company_name)
 );
-
 insert into company(company_id,company_name,company_type,company_address)
-values(3001,'Bayer AG','Medictions for addiction','t1,3rd Street,Erode');
+values(3001,'Bayer AG','Medictions for addiction','T1,3rd Street,Erode');
 insert into company(company_id,company_name,company_type,company_address)
-values(3002,'ABBVIE','Benzodiazepines','t2,2nd Street,trichy');
+values(3002,'ABBVIE','Benzodiazepines','T2,2nd Street,trichy');
 insert into company(company_id,company_name,company_type,company_address)
 values(3003,'SANOFIE','Medictions for dementia','D3,1st Street,chennai');
-insert into company(company_id,company_name,company_type,company_addressl;
+insert into company(company_id,company_name,company_type,company_address)
 values(3004,'MERCK','Stimulant Mediction','B6,4th Street,coimbatore');
 select * from company;
+
 
 ```
 ### Feature 2:List of all pharmacy products

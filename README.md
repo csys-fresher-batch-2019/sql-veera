@@ -159,10 +159,18 @@ select c.company_id,c.company_name,p.product_id,p.product_name,s.stock1_type,s.s
 from company c,product p,stock1 s
 where c.company_id=p.company_id and p.product_id=s.product_id;
 
+
 ```
 ```sql query to update as available
 update stock1 
 set stock1_status='available'
 where product_id=1001;
-   
+
+   | SI.NO | STOCK1_ID | PRODUCT_ID | STOCK1_NAME | STOCK1_NUMBER | STOCK1_TYPE | STOCK_STATUS |
+|-------|-----------|------------|-------------|---------------|-------------|--------------|
+| 1     | 9001      | 1000       | LOCAL       | 2095          | packed      | available    |
+| 2     | 9002      | 1001       | EXPORT      | 2096          | open        | available    |
+| 3     | 9003      | 1002       | LOCAL       | 2097          | packed      | available    |
+ 
+
   ```

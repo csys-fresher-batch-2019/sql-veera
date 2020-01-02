@@ -8,7 +8,7 @@
 | 1     | 3001       | BAYER AG     | Medications for addiction | T1,3rd street, Erode       |
 | 2     | 3002       | ABBVIE       | Benzodiazepines           | T2,2nd street, Trichy      |
 | 3     | 3004       | SANOFIE      | Medications for dementia  | D3,1st street, Chennai     |
-| 4     | 3005       | MERCK        | Stimulant mediction       | B6,4th street,  Coimbatore |
+
 
 
 ### Feature 2: List of all pharmacy products
@@ -18,8 +18,7 @@
 | 1     | 1000       | HUMIRA       | 250  | 10   |
 | 2     | 1001       | ELIQUIS      | 200  | 6    |
 | 3     | 1002       | AVASTIN      | 300  | 8    |
-| 4     | 1003       | HERCEPTIN    | 280  | 14   |
-| 5     | 1004       | KEYTRUDA     | 350  | 20   |
+
 
 
 ### Feature 3:Stock Details

@@ -13,22 +13,21 @@
 
 ### Feature 2: List of all pharmacy products
 
-| SI.NO | PRODUCT_ID | PRODUCT_NAME | COST | DOSE |
-|-------|------------|--------------|------|------|
-| 1     | 1000       | HUMIRA       | 250  | 10   |
-| 2     | 1001       | ELIQUIS      | 200  | 6    |
-| 3     | 1002       | AVASTIN      | 300  | 8    |
+| SI.NO | PRODUCT_ID |COMPANY_ID |  PRODUCT_NAME| COST | DOSE |
+|-------|------------|---------- |--------------|------|------|
+| 1     | 1000       | 3001      |  HUMIRA      | 250  | 10   |
+| 2     | 1001       | 3002      | ELIQUIS      | 200  | 6    |
+| 3     | 1002       | 3003      | AVASTIN      | 300  | 8    |
 
 
 
 ### Feature 3:Stock Details
 
-| SI.NO | STOCK_ID | STOCK_NAME | STOCK_NUMBER | STOCK_TYPE | STOCK_STATUS      |
-|-------|----------|------------|--------------|------------|-------------------|
-| 1     | 9001     | LOCAL      | 2095         | PACKED     | AVAILABLE         |
-| 2     | 9002     | EXPORT     | 2096         | OPEN       | NOT AVAILABLE     |
-| 3     | 9003     | LOCAL      | 2097         | PACKED     | AVAILABLE         |
-
+| SI.NO | STOCK1_ID| PRODUCT_ID | STOCK1_NAME | STOCK1_NUMBER| STOCK1_TYPE| STOCK1_STATUS     |
+|-------|----------|------------|------------ | -------------|------------|-------------------|
+| 1     | 9001     | 1000       |  LOCAL      | 2095         | PACKED     | AVAILABLE         |
+| 2     | 9002     | 1001       |  EXPORT     | 2096         | OPEN       | NOT AVAILABLE     |
+| 3     | 9003     | 1002       | LOCAL       | 2097         | Packed     | AVAILABLE         |
 
 ### Feature 4:Sell Details
 

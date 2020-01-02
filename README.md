@@ -166,3 +166,4 @@ update stock1
 set stock1_status='available'
 where product_id=1001;
   
+  ```

@@ -21,7 +21,7 @@ company_name varchar2(30) not null,
 company_type varchar2(30) not null,
 company_address varchar2(30) not null,
 constraint company_id_pk primary key(company_id),
-constraint company_id_uq unique key(company_name)
+constraint company_id_uq unique (company_name)
 );
 insert into company(company_id,company_name,company_type,company_address)
 values(3001,'Bayer AG','Medictions for addiction','T1,3rd Street,Erode');

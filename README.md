@@ -156,5 +156,13 @@ values(3003,'Medications for dementia',618,'Packed','Not Available');
 select * from inventory;
 
 ```
+```sql query for inner join to display product details
+select c.company_id,c.company_name,p.product_id,p.product_name,s.stock1_type,s.stock1_status
+from company c,product p,stock1 s
+where c.company_id=p.company_id and p.product_id=s.product_id;
 
+```sql query to update as available
+update stock1 
+set stock1_status='available'
+where product_id=1001;
   

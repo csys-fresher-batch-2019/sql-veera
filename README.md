@@ -139,15 +139,15 @@ inventory_id number,
 inventory_items varchar2(30) not null,
 inventory_number number not null,
 inventory_type varchar2(30) not null,
-inventory_description varchar2(30) not null,
+inventory_status varchar2(30) not null,
 constraint inventory_id_pk primary key (inventory_id);
 )
 
-insert into inventory(inventory_id  ,inventory_items ,inventory_number,inventory_type,inventory_description)
+insert into inventory(inventory_id  ,inventory_items ,inventory_number,inventory_type,inventory_status)
 values(3001,'Benzodiazepines',601,'Packed','Available');
-insert into inventory(inventory_id ,inventory_items,inventory_number,inventory_type,inventory_description)
+insert into inventory(inventory_id ,inventory_items,inventory_number,inventory_type,inventory_status)
 values(3002,'Stimulant mediction',613,'Not Packed','Available');
-insert into inventory(inventory_id ,inventory_items,inventory_number,inventory_type,inventory_description)
+insert into inventory(inventory_id ,inventory_items,inventory_number,inventory_type,inventory_status)
 values(3003,'Medications for dementia',618,'Packed','Not Available');
 select * from inventory;
 

@@ -160,11 +160,11 @@ select c.company_id,c.company_name,p.product_id,p.product_name,s.stock1_type,s.s
 from company c,product p,stock1 s
 where c.company_id=p.company_id and p.product_id=s.product_id;
 
-| SI.NO |      | COMPANY_NAME | PRODUCT_ID | PRODUCT_NAME | STOCK1_TYPE | STOCK1_STATUS |
-|-------|------|--------------|------------|--------------|-------------|---------------|
-| 1     | 3001 | BAYER AG     | 1000       | HUMIRA       | PACKED      | AVAILABLE     |
-| 2     | 3002 | ABBVIE       | 1001       | ELIQUIS      | OPEN        |NOT  AVAILABLE |
-| 3     | 3003 | SANOFIE      | 1002       | AVASTIN      | PACKED      | AVAILABLE     |
+| SI.NO |COMPAMY_ID  | COMPANY_NAME | PRODUCT_ID | PRODUCT_NAME | STOCK1_TYPE | STOCK1_STATUS |
+|-------|------------|--------------|------------|--------------|-------------|---------------|
+| 1     | 3001       | BAYER AG     | 1000       | HUMIRA       | PACKED      | AVAILABLE     |
+| 2     | 3002       | ABBVIE       | 1001       | ELIQUIS      | OPEN        |NOT  AVAILABLE |
+| 3     | 3003       | SANOFIE      | 1002       | AVASTIN      | PACKED      | AVAILABLE     |
 
 
 

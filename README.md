@@ -153,14 +153,23 @@ select * from inventory;
 | 2     | 3002         | Stimulant mediction      | 613              | Not packed     | Available             |
 | 3     | 3003         | Medications for dementia | 618              | Packed         | Not Available         |
 
+### Featuers 6: Product status
 
 ```sql query for inner join to display product details
 select c.company_id,c.company_name,p.product_id,p.product_name,s.stock1_type,s.stock1_status
 from company c,product p,stock1 s
 where c.company_id=p.company_id and p.product_id=s.product_id;
 
+| SI.NO |      | COMPANY_NAME | PRODUCT_ID | PRODUCT_NAME | STOCK1_TYPE | STOCK1_STATUS |
+|-------|------|--------------|------------|--------------|-------------|---------------|
+| 1     | 3001 | BAYER AG     | 1000       | HUMIRA       | PACKED      | AVAILABLE     |
+| 2     | 3002 | ABBVIE       | 1001       | ELIQUIS      | OPEN        |NOT  AVAILABLE |
+| 3     | 3003 | SANOFIE      | 1002       | AVASTIN      | PACKED      | AVAILABLE     |
+
+
 
 ```
+### Feature 7: To update available  product
 ```sql query to update as available
 update stock1 
 set stock1_status='available'
@@ -174,6 +183,21 @@ where product_id=1001;
 
 
 ```
+ ### Feature 8: To dispaly certain sell details
  
+ ```sql query display the certain sell details
 
-  ```
+select s.sell_id,s.sell_name,s.sell_type,i.inventory_items,i.inventory_status 
+from sell s,inventory i
+where s.sell_id=i.sell_id ;
+
+
+| SI.NO | SELL_ID | SELL_NAME | SELL_TYPE | INVENTORY_ITEMS          | INVENTORY_STATUS |
+|-------|---------|-----------|-----------|--------------------------|------------------|
+| 1     | 7000    | ARAVIND   | ONLINE    | Benzodiazepines          | Available        |
+| 2     | 7001    | HARI      | PHARMACY  | Stimulant mediction      | Available        |
+| 3     | 7002    | RAVI      | PHARMACY  | Medications for dementia | NOT Available    |
+
+```
+
+ 

@@ -174,7 +174,7 @@ where c.company_id=p.company_id and p.product_id=s.product_id;
 update stock1 
 set stock1_status='available'
 where product_id=1001;
-
+ 
 | SI.NO | STOCK1_ID | PRODUCT_ID | STOCK1_NAME | STOCK1_NUMBER | STOCK1_TYPE | STOCK_STATUS |
 |-------|-----------|------------|-------------|---------------|-------------|--------------|
 | 1     | 9001      | 1000       | LOCAL       | 2095          | packed      | available    |

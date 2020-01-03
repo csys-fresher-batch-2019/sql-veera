@@ -35,7 +35,7 @@ select * from company;
 
 #### query:
 
-```sql
+``` SQL
 
 create table product(
 product_id number ,

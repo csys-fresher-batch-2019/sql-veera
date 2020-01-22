@@ -91,7 +91,7 @@ values(  9003,1002,'local',2097,'packed','available');
 select * from stock1;
 
 ```
-| SI.NO | STOCK1_ID| PRODUCT_ID | STOCK1_NAME | STOCK1_NUMBER| STOCK1_TYPE| STOCK1_STATUS     |
+| SI.NO | STOCK1_ID| PRODUCT_ID | STOCK1_NAME | STOCK1_NUMBER`| STOCK1_TYPE| STOCK1_STATUS    |
 |-------|----------|------------|------------ | -------------|------------|-------------------|
 | 1     | 9001     | 1000       |  LOCAL      | 2095         | PACKED     | AVAILABLE         |
 | 2     | 9002     | 1001       |  EXPORT     | 2096         | OPEN       | NOT AVAILABLE     |

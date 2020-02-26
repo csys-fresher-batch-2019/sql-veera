@@ -20,6 +20,7 @@ insert into AdminRegister(Admin_id,Admin_name,Email_id,pass_word)
 values(1235,'suresh','suresh@gmail.com','suresh123');
 select * from AdminRegister;
 ````
+
 +------+---------+------------+-------------------+------------+
 | s.no | AdminId | Admin_name | Email_id          | pass_word  |
 +------+---------+------------+-------------------+------------+
@@ -27,7 +28,6 @@ select * from AdminRegister;
 +------+---------+------------+-------------------+------------+
 | 2    | 1235    | suresh     | suresh@gmail.com  | suresh123  |
 +------+---------+------------+-------------------+------------+
-
 ### Feature 1:Company Details
 
 ```sql
@@ -51,6 +51,7 @@ values(3003,'SANOFIE','Medictions for dementia','D3,1st Street,chennai');
 select * from company;
 
 ```
+
 | SI.NO | COMPANY_ID | COMPANY_NAME | COMPANY_TYPE              | COMPANY_ADDRESS            |
 |-------|------------|--------------|---------------------------|----------------------------|
 | 1     | 3001       | BAYER AG     | Medications for addiction | T1,3rd street, Erode       |

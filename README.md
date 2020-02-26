@@ -19,7 +19,7 @@ values(1234,'sathish','sathish@gmail.com','sathish123');
 insert into AdminRegister(Admin_id,Admin_name,Email_id,pass_word)
 values(1235,'suresh','suresh@gmail.com','suresh123');
 select * from AdminRegister;
-
+````
 +------+---------+------------+-------------------+------------+
 | s.no | AdminId | Admin_name | Email_id          | pass_word  |
 +------+---------+------------+-------------------+------------+
@@ -27,7 +27,7 @@ select * from AdminRegister;
 +------+---------+------------+-------------------+------------+
 | 2    | 1235    | suresh     | suresh@gmail.com  | suresh123  |
 +------+---------+------------+-------------------+------------+
-``
+
 ### Feature 1:Company Details
 
 ```sql

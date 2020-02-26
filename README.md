@@ -27,6 +27,23 @@ select * from AdminRegister;
 | 1     | 1234    | sathish    | sathish@gmail.com | sathish123       |
 | 2     | 1235    | suresh     | suresh@gmail.com  | suresh123        |
 
+### Feature 2:User Registration
+```sql
+create table UserRegister(
+name varchar(30) not null,
+Email_Id varchar(30) unique,
+password varchar(30) not null,
+contact number not null);
+insert into UserRegister(name,Email_id,password,contact)
+values('siva','siva@gmail.com','siva123',9842585734);
+select password from UserRegister where name=(select name from UserRegister where name='siva');
+select * from UserRegister;
+```
+| SI.NO | Name       | Email_Id              | Password    | Contact          |
+|-------|------------|---------------------- |-------------|------------------|
+| 1     | siva       |  siva@gmail.com       | siva123     | 9842585734       |
+| 2     | sharan     | sharan@gmail.com      | sharan123   | 9876567575       |
+| 3     | vijay      |vijaysankar@gmail.com  | vijay123    |  9876543210      |
 
 
 ### Feature 3:Company Details

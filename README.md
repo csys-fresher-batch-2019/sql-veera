@@ -2,6 +2,32 @@
 *http://pharmacystore.in
 ## Features
 *user can able to view all pharmacy products
+
+### Feature 1:Admin 
+```sql
+create table AdminRegister
+(
+Admin_id number ,
+Admin_name varchar(20) not null,
+Email_id varchar(30) ,
+pass_word varchar(30) not null,
+constraint admin_id_uk unique (admin_id),
+constraint Email_id_uh unique (Email_id));
+
+insert into AdminRegister(Admin_id,Admin_name,Email_id,pass_word)
+values(1234,'sathish','sathish@gmail.com','sathish123');
+insert into AdminRegister(Admin_id,Admin_name,Email_id,pass_word)
+values(1235,'suresh','suresh@gmail.com','suresh123');
+select * from AdminRegister;
+
++------+---------+------------+-------------------+------------+
+| s.no | AdminId | Admin_name | Email_id          | pass_word  |
++------+---------+------------+-------------------+------------+
+| 1    | 1234    | sathish    | sathish@gmail.com | sathish123 |
++------+---------+------------+-------------------+------------+
+| 2    | 1235    | suresh     | suresh@gmail.com  | suresh123  |
++------+---------+------------+-------------------+------------+
+``
 ### Feature 1:Company Details
 
 ```sql

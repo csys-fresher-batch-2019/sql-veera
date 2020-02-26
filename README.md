@@ -76,7 +76,7 @@ select * from company;
 | 2     | 3002       | ABBVIE       | Benzodiazepines           | T2,2nd street, Trichy      |
 | 3     | 3004       | SANOFIE      | Medications for dementia  | D3,1st street, Chennai     |
 
-### Feature 2:List of all pharmacy products
+### Feature 4:List of all pharmacy products
 
 #### query:
 
@@ -112,7 +112,7 @@ select * from product;
 | 3     | 1002       | 3003      | AVASTIN      | 300  | 8    |
 
 
-### Feature 3:Stock1 Details
+### Feature 5:Stock1 Details
 
 
 ```sql
@@ -142,7 +142,7 @@ select * from stock1;
 | 2     | 9002     | 1001       |  EXPORT     | 2096         | OPEN       | NOT AVAILABLE     |
 | 3     | 9003     | 1002       | LOCAL       | 2097         | Packed     | AVAILABLE         |
 
-### Feature 4: Sell Details
+### Feature 6: Sell Details
 
 
 ```sql
@@ -168,37 +168,9 @@ select * from sell;
 | 2     | 7001    | HARI      | FULL      | DOCTER PRESCRIPTION |
 | 3     | 7002    | RAVI      | FULL      | DOCTER PRESCRIPTION |
 
-### Feature 5:Inventory details
 
 
-```sql
-
-create table inventory 
-(
-inventory_id number,
-inventory_items varchar2(30) not null,
-inventory_number number not null,
-inventory_type varchar2(30) not null,
-inventory_status varchar2(30) not null,
-constraint inventory_id_pk primary key (inventory_id);
-)
-
-insert into inventory(inventory_id  ,inventory_items ,inventory_number,inventory_type,inventory_status)
-values(3001,'Benzodiazepines',601,'Packed','Available');
-insert into inventory(inventory_id ,inventory_items,inventory_number,inventory_type,inventory_status)
-values(3002,'Stimulant mediction',613,'Not Packed','Available');
-insert into inventory(inventory_id ,inventory_items,inventory_number,inventory_type,inventory_status)
-values(3003,'Medications for dementia',618,'Packed','Not Available');
-select * from inventory;
-
-```
-| SI.NO | INVENTORY_ID | INVENTORY_ITEMS          | INVENTORY_NUMBER | INVENTORY_TYPE | INVENTORY_STATUS      |
-|-------|--------------|--------------------------|------------------|----------------|-----------------------|
-| 1     | 3001         | Benzodiazepines          | 601              | Packed         | Available             |
-| 2     | 3002         | Stimulant mediction      | 613              | Not packed     | Available             |
-| 3     | 3003         | Medications for dementia | 618              | Packed         | Not Available         |
-
-### Featuers 6: Product status
+### Featuers 7: Product status
 
 ```sql query for inner join to display product details
 select c.company_id,c.company_name,p.product_id,p.product_name,s.stock1_type,s.stock1_status
@@ -214,7 +186,7 @@ where c.company_id=p.company_id and p.product_id=s.product_id;
 
 
 ```
-### Feature 7: To update available  product
+### Feature 8: To update available  product
 ```sql query to update as available
 update stock1 
 set stock1_status='available'
@@ -228,7 +200,7 @@ where product_id=1001;
 
 
 ```
- ### Feature 8: To dispaly certain sell details
+ ### Feature 9: To dispaly certain sell details
  
  ```sql query display the certain sell details
 

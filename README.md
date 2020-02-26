@@ -20,13 +20,13 @@ insert into AdminRegister(Admin_id,Admin_name,Email_id,pass_word)
 values(1235,'suresh','suresh@gmail.com','suresh123');
 select * from AdminRegister;
 ```
-+------+---------+------------+-------------------+------------+
-| s.no | AdminId | Admin_name | Email_id          | pass_word  |
-+------+---------+------------+-------------------+------------+
-| 1    | 1234    | sathish    | sathish@gmail.com | sathish123 |
-+------+---------+------------+-------------------+------------+
-| 2    | 1235    | suresh     | suresh@gmail.com  | suresh123  |
-+------+---------+------------+-------------------+------------+
+
+
+| SI.NO | AdminId |Admin_name  |  Email_id         |  pass_word       |
+|-------|---------|------------|-------------------|------------------|
+| 1     | 1234    | sathish    | sathish@gmail.com | sathish123       |
+| 2     | 1235    | suresh     | suresh@gmail.com  | suresh123        |
+
 
 
 ### Feature 3:Company Details

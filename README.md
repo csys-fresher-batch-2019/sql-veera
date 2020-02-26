@@ -146,27 +146,27 @@ select * from stock1;
 
 
 ```sql
-create table sell(
-sell_id number ,
-sell_name varchar2(30) not null,
-sell_type varchar2(30) not  null,
-sell_description varchar2(30) not null
-);
+create table sales(
+sales_id number not null,
+product_id number not null,
+sales_date date DEFAULT SYSDATE,
+sales_quantity number ,
+amount number not null,
+constraint product_id_f foreign key (product_id) references product(product_id));
+insert into sales(sales_id,product_id,sales_date,sales_quantity,amount)
+values(2000,1000,SYSDATE,30,1350);
+insert into sales(sales_id,product_id,sales_date,sales_quantity,amount)
+values(2001,1001,SYSDATE,20,7000);
+insert into sales(sales_id,product_id,sales_date,sales_quantity,amount)
+values(2002,1002,SYSDATE,25,5000);
+select * from sales;
 
-insert into sell(sell_id,sell_name, sell_type, sell_description)
-values(7000,'Aravind','Half','Self');
-insert into sell(sell_id,sell_name, sell_type, sell_description)
-values(7001,'Hari','Full','Docter Prescription');
-insert into sell(sell_id,sell_name, sell_type, sell_description)
-values(7002,'Ravi','Half','Docter Prescription');
-
-select * from sell;
 ```
-| SI.NO | SELL_ID | SELL_NAME | SELL_TYPE | SELL_DESCRIPTION    |
-|-------|---------|-----------|-----------|---------------------|
-| 1     | 7000    | ARAVIND   | HALF      | SELF                |
-| 2     | 7001    | HARI      | FULL      | DOCTER PRESCRIPTION |
-| 3     | 7002    | RAVI      | FULL      | DOCTER PRESCRIPTION |
+| SI.NO | sales_ID| Product_Id| Sale_Date |Sales_Quantity  | Amount     | 
+|-------|---------|-----------|-----------|----------------|------------| 
+| 1     | 2001    | 1001      |  19-02-20 | 20             | 7000       | 
+| 2     | 2002    | 1002      |  19-02-20 | 25             | 5000       | 
+| 3     | 2003    | 1005      |  19-02-20 | 10             |  400       | 
 
 
 
